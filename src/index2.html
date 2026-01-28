@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Manasvin Surya | AI/ML Engineer</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#3b82f6",
+                        accent: "#10b981",
+                        "background-light": "#f8fafc",
+                        "background-dark": "#020617",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                        mono: ["JetBrains Mono", "monospace"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: 'Inter', sans-serif;
+                scroll-behavior: smooth;
+            }
+        }
+        .grid-pattern {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        }
+        .glow-effect {
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
+        }
+        .neon-border:hover {
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
+            border-color: #10b981;
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #3b82f6; }
+        }
+        .typewriter-text {
+            overflow: hidden;
+            border-right: 2px solid #3b82f6;
+            white-space: nowrap;
+            letter-spacing: -0.025em;
+            animation: 
+                typing 3s steps(30, end),
+                blink-caret .75s step-end infinite;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 transition-colors duration-300">
+    <div class="fixed inset-0 pointer-events-none grid-pattern opacity-50 z-0"></div>
+    <nav
+        class="sticky top-0 z-50 backdrop-blur-md bg-white/70 dark:bg-background-dark/80 border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="text-xl font-bold tracking-tighter text-primary">Manasvin Surya</div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a class="hover:text-primary transition-colors" href="#expertise">Expertise</a>
+                <a class="hover:text-primary transition-colors" href="#projects">Projects</a>
+                <a class="hover:text-primary transition-colors" href="#education">Education</a>
+                <a class="hover:text-primary transition-colors" href="#experience">Experience</a>
+                <div class="h-4 w-px bg-slate-300 dark:bg-slate-700"></div>
+                <div class="flex items-center gap-4">
+                    <a class="hover:text-primary" href="https://linkedin.com/in/manasvin-surya" target="_blank">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <a class="hover:text-primary" href="https://github.com/manasvin24" target="_blank"><span
+                            class="material-icons-round text-xl">code</span></a>
+                    <a class="hover:text-primary" href="mailto:mbj@ucsd.edu"><span
+                            class="material-icons-round text-xl">alternate_email</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="relative z-10">
+        <section class="max-w-7xl mx-auto px-6 pt-24 pb-32">
+            <div class="max-w-3xl">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-6 border border-primary/20">
+                    <span class="relative flex h-2 w-2">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                    </span>
+                    Available for AI/ML Opportunities
+                </div>
+                <div class="mb-4">
+                    <span
+                        class="font-mono text-lg md:text-xl text-slate-500 dark:text-slate-400 typewriter-text inline-block">
+                        <span class="text-purple-500 dark:text-purple-400">const</span> engineer = <span
+                            class="text-primary">new</span> <span class="text-accent">MLEngineer</span>();
+                    </span>
+                </div>
+                <h1
+                    class="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900 dark:from-white dark:via-slate-400 dark:to-white bg-clip-text text-transparent">
+                    Manasvin Surya <br />
+                </h1>
+                <p class="text-xl md:text-2xl text-slate-600 dark:text-slate-400 font-medium leading-relaxed mb-10">
+                    Specializing in <span class="text-primary">ML Infra</span> and <span
+                        class="text-accent font-mono">LLM Inferencing</span>. <br />
+                    I don't just build models, I make them run fast in the real world.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a class="px-8 py-4 bg-primary text-white font-bold rounded-full hover:shadow-lg hover:shadow-primary/30 transition-all transform hover:-translate-y-1"
+                        href="mailto:mbj@ucsd.edu">Get In Touch</a>
+                    <a class="px-8 py-4 border border-slate-300 dark:border-slate-700 font-bold rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-all"
+                        href="#projects">View Projects</a>
+                </div>
+            </div>
+        </section>
+        <section class="max-w-7xl mx-auto px-6 py-24 border-t border-slate-200 dark:border-slate-800" id="expertise">
+            <h2 class="text-3xl font-bold mb-16 flex items-center gap-3">
+                <span class="material-icons-round text-primary">analytics</span>
+                Core Expertise
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div
+                    class="p-8 rounded-2xl bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 glow-effect">
+                    <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6">
+                        <span class="material-icons-round">psychology</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Agentic Systems & RAG</h3>
+                    <p class="text-slate-500 dark:text-slate-400 mb-6">End-to-end intelligent systems with retrieval,
+                        tools, memory, and multi-step reasoning.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-2 py-1 text-[10px] font-bold font-mono bg-slate-100 dark:bg-slate-800 rounded">LangGraph</span>
+                        <span
+                            class="px-2 py-1 text-[10px] font-bold font-mono bg-slate-100 dark:bg-slate-800 rounded">LangChain</span>
+                        <span
+                            class="px-2 py-1 text-[10px] font-bold font-mono bg-slate-100 dark:bg-slate-800 rounded">RAG</span>
+                        <span
+                            class="px-2 py-1 text-[10px] font-bold font-mono bg-slate-100 dark:bg-slate-800 rounded">Vector
+                            DBs</span>
+                    </div>
+                </div>
+                <div
+                    class="p-8 rounded-2xl bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 glow-effect">
+                    <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent mb-6">
+                        <span class="material-icons-round">settings</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">LLM Engineering & Inference</h3>
+                    <p class="text-slate-500 dark:text-slate-400 mb-6">Fine-tuning, optimizing, and serving LLMs at
+                        scale under latency and throughput constraints.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-2 py-1 text-[10px] font-bold font-mono bg-slate-100 dark:bg-slate-800 rounded">vLLM</span>
+                        <span
+                            class="px-2 py-1 text-[10px] font-bold font-mono bg-slate-100 dark:bg-slate-800 rounded">TensorRT-LLM</span>
+                        <span
+                            class="px-2 py-1 text-[10px] font-bold font-mono bg-slate-100 dark:bg-slate-800 rounded">Triton</span>
+                        <span
+                            class="px-2 py-1 text-[10px] font-bold font-mono bg-slate-100 dark:bg-slate-800 rounded">LoRA</span>
+                        <span
+                            class="px-2 py-1 text-[10px] font-bold font-mono bg-slate-100 dark:bg-slate-800 rounded">PEFT</span>
+                    </div>
+                </div>
+                <div
+                    class="p-8 rounded-2xl bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 glow-effect">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-500 mb-6">
+                        <span class="material-icons-round">settings_input_component</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Data &amp; MLOps</h3>
+                    <p class="text-slate-500 dark:text-slate-400 mb-6">Streamlining pipelines with Docker, MLFlow, and
+                        DVC for production environments.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-2 py-1 text-[10px] font-bold font-mono bg-slate-100 dark:bg-slate-800 rounded">Docker</span>
+                        <span
+                            class="px-2 py-1 text-[10px] font-bold font-mono bg-slate-100 dark:bg-slate-800 rounded">Airflow</span>
+                        <span
+                            class="px-2 py-1 text-[10px] font-bold font-mono bg-slate-100 dark:bg-slate-800 rounded">SQL/MongoDB</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="max-w-7xl mx-auto px-6 py-24 bg-slate-50/50 dark:bg-slate-900/20" id="projects">
+            <div class="flex justify-between items-end mb-16">
+                <div>
+                    <h2 class="text-3xl font-bold mb-4 flex items-center gap-3">
+                        <span class="material-icons-round text-primary">rocket_launch</span>
+                        Featured Projects
+                    </h2>
+                    <p class="text-slate-500 dark:text-slate-400">Pushing the boundaries of LLM performance and
+                        accessibility.</p>
+                </div>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="group relative">
+                    <div
+                        class="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded-2xl opacity-10 group-hover:opacity-20 transition duration-500">
+                    </div>
+                    <div
+                        class="relative p-8 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 transition-all duration-300">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="px-3 py-1 rounded text-xs font-mono font-bold bg-primary/10 text-primary">LLM
+                                INFRA</span>
+                            <span class="text-xs font-mono text-slate-500">Dec 2025</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Cache-Aware LLM Inference</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                            Engineered an LLM inference server with intra-request KV caching and cross-request prefix
+                            reuse. Achieved a <span class="text-accent font-bold">2.73x higher throughput</span> and
+                            2.80x higher tokens/sec.
+                        </p>
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-center gap-2 text-sm">
+                                <span class="material-icons-round text-accent text-sm">check_circle</span>
+                                Reduced total latency by 63.3% on average.
+                            </div>
+                            <div class="flex items-center gap-2 text-sm">
+                                <span class="material-icons-round text-accent text-sm">check_circle</span>
+                                Eliminated redundant prefill with near-zero TTFT.
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span
+                                class="px-2 py-1 text-xs font-mono bg-slate-100 dark:bg-slate-800 rounded">FastAPI</span>
+                            <span
+                                class="px-2 py-1 text-xs font-mono bg-slate-100 dark:bg-slate-800 rounded">PyTorch</span>
+                            <span class="px-2 py-1 text-xs font-mono bg-slate-100 dark:bg-slate-800 rounded">Prefix
+                                Caching</span>
+                            <span
+                                class="px-2 py-1 text-xs font-mono bg-slate-100 dark:bg-slate-800 rounded">Docker</span>
+                        </div>
+                        <a class="inline-flex items-center gap-2 text-sm font-bold text-primary group-hover:translate-x-1 transition-transform"
+                            href="https://github.com/manasvin24/prefix-not-twice">
+                            Explore Repository <span class="material-icons-round text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="group relative">
+                    <div
+                        class="absolute -inset-1 bg-gradient-to-r from-accent to-primary rounded-2xl opacity-10 group-hover:opacity-20 transition duration-500">
+                    </div>
+                    <div
+                        class="relative p-8 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 transition-all duration-300">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="px-3 py-1 rounded text-xs font-mono font-bold bg-accent/10 text-accent">NLP
+                                &amp; RAG</span>
+                            <span class="text-xs font-mono text-slate-500">March 2025</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">LLM-powered Semantic Query Engine</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                            Built an NL-to-SQL system for Standard Chartered GBS. Implemented RAG-based schema
+                            grounding, boosting query accuracy to <span class="text-primary font-bold">88.2%</span>.
+                        </p>
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-center gap-2 text-sm">
+                                <span class="material-icons-round text-primary text-sm">check_circle</span>
+                                84.7% success with SQLAlchemy validation.
+                            </div>
+                            <div class="flex items-center gap-2 text-sm">
+                                <span class="material-icons-round text-primary text-sm">check_circle</span>
+                                Suggested and implemented RAG schema grounding.
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="px-2 py-1 text-xs font-mono bg-slate-100 dark:bg-slate-800 rounded">RAG</span>
+                            <span
+                                class="px-2 py-1 text-xs font-mono bg-slate-100 dark:bg-slate-800 rounded">SQLAlchemy</span>
+                            <span
+                                class="px-2 py-1 text-xs font-mono bg-slate-100 dark:bg-slate-800 rounded">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="max-w-7xl mx-auto px-6 py-24 border-t border-slate-200 dark:border-slate-800" id="education">
+            <h2 class="text-3xl font-bold mb-16 flex items-center gap-3">
+                <span class="material-icons-round text-primary">school</span>
+                Education
+            </h2>
+            <div class="space-y-12">
+                <div
+                    class="relative pl-10 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-px before:bg-slate-200 dark:before:bg-slate-800">
+                    <div
+                        class="absolute left-[-5px] top-2 w-[11px] h-[11px] rounded-full bg-primary ring-4 ring-white dark:ring-background-dark">
+                    </div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                        <div>
+                            <h3 class="text-xl font-bold">University of California, San Diego</h3>
+                            <p class="text-primary font-medium">M.S. Electrical and Computer Engineering (Machine
+                                Learning & Data Science)</p>
+                        </div>
+                        <div class="text-right text-sm text-slate-500">
+                            <p class="font-bold">Expected March 2027</p>
+                            <p>United States</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="relative pl-10 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-px before:bg-slate-200 dark:before:bg-slate-800">
+                    <div
+                        class="absolute left-[-5px] top-2 w-[11px] h-[11px] rounded-full bg-slate-400 ring-4 ring-white dark:ring-background-dark">
+                    </div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                        <div>
+                            <h3 class="text-xl font-bold">National Institute of Technology, Trichy</h3>
+                            <p class="text-primary font-medium">B.Tech. Electronics and Communication Engineering</p>
+                        </div>
+                        <div class="text-right text-sm text-slate-500">
+                            <p class="font-bold">August 2020 - May 2024</p>
+                            <p>India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Achievements Section -->
+        <section class="max-w-7xl mx-auto px-6 py-24 border-t border-slate-200 dark:border-slate-800" id="achievements">
+            <h2 class="text-3xl font-bold mb-16 flex items-center gap-3">
+                <span class="material-icons-round text-primary">emoji_events</span>
+                Achievements
+            </h2>
+            <div class="grid gap-8">
+                <div class="group relative">
+                    <div
+                        class="absolute -inset-1 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-2xl opacity-10 group-hover:opacity-20 transition duration-500">
+                    </div>
+                    <div
+                        class="relative p-8 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 transition-all duration-300">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-14 h-14 rounded-xl bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center text-white shrink-0">
+                                    <span class="material-icons-round text-2xl">military_tech</span>
+                                </div>
+                                <div>
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <span
+                                            class="px-3 py-1 rounded-full text-xs font-bold bg-yellow-500/10 text-yellow-600 dark:text-yellow-400">🏆
+                                            WINNER</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold mb-2">NSF HDR Scientific Modeling Out of Distribution:
+                                        Neural Forecasting</h3>
+                                    <p class="text-slate-600 dark:text-slate-400 mb-4">
+                                        Predicted future neural dynamics across multi-day sessions for brain-computer
+                                        interface applications like artificial limb control.
+                                    </p>
+                                    <a class="inline-flex items-center gap-2 text-sm font-bold text-primary hover:translate-x-1 transition-transform"
+                                        href="https://www.codabench.org/competitions/9806/" target="_blank">
+                                        View Competition <span class="material-icons-round text-sm">arrow_forward</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text-right text-sm text-slate-500 shrink-0">
+                                <p class="font-bold">January 2026</p>
+                                <p>UC San Diego</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="max-w-7xl mx-auto px-6 py-24 border-t border-slate-200 dark:border-slate-800" id="experience">
+            <h2 class="text-3xl font-bold mb-16 flex items-center gap-3">
+                <span class="material-icons-round text-primary">work_history</span>
+                Professional Journey
+            </h2>
+            <div class="space-y-12">
+                <div
+                    class="relative pl-10 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-px before:bg-slate-200 dark:before:bg-slate-800">
+                    <div
+                        class="absolute left-[-5px] top-2 w-[11px] h-[11px] rounded-full bg-primary ring-4 ring-white dark:ring-background-dark">
+                    </div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold">Standard Chartered GBS</h3>
+                            <p class="text-primary font-medium">Software Development Engineer</p>
+                        </div>
+                        <div class="text-right text-sm text-slate-500">
+                            <p class="font-bold">August 2024 — August 2025</p>
+                            <p>India</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-slate-600 dark:text-slate-400">
+                        <li class="flex gap-3"><span class="material-icons-round text-xs mt-1">circle</span> 30%
+                            improvement in query performance and 15% acceleration in credit processing achieved by
+                            migrating databases from Oracle to PostgreSQL and refactoring schema to eliminate redundant
+                            joins.</li>
+                        <li class="flex gap-3"><span class="material-icons-round text-xs mt-1">circle</span> 40%
+                            reduction in KYC processing latency realized by architecting a resilient extraction pipeline
+                            for OCR and NER models, enhancing system throughput and compliance triage efficiency.</li>
+                    </ul>
+                </div>
+                <div
+                    class="relative pl-10 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-px before:bg-slate-200 dark:before:bg-slate-800">
+                    <div
+                        class="absolute left-[-5px] top-2 w-[11px] h-[11px] rounded-full bg-slate-400 ring-4 ring-white dark:ring-background-dark">
+                    </div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold">Xu Labs, Carnegie Mellon University</h3>
+                            <p class="text-primary font-medium">Machine Learning Research Intern</p>
+                        </div>
+                        <div class="text-right text-sm text-slate-500">
+                            <p class="font-bold">January 2024 — March 2024</p>
+                            <p>United States</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-slate-600 dark:text-slate-400">
+                        <li class="flex gap-3"><span class="material-icons-round text-xs mt-1">circle</span> 20%
+                            reduction in manual operational interventions and a ROUGE score of 0.782 attained by
+                            engineering drift-aware reliability metrics.</li>
+                        <li class="flex gap-3"><span class="material-icons-round text-xs mt-1">circle</span> Multi-node
+                            A100/H100 clusters utilized to architect distributed multimodal pipelines with
+                            FlashAttention and sparse kernels, scaling Cryo-ET retrieval capabilities.</li>
+                    </ul>
+                </div>
+                <div
+                    class="relative pl-10 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-px before:bg-slate-200 dark:before:bg-slate-800">
+                    <div
+                        class="absolute left-[-5px] top-2 w-[11px] h-[11px] rounded-full bg-slate-400 ring-4 ring-white dark:ring-background-dark">
+                    </div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold">Standard Chartered GBS</h3>
+                            <p class="text-primary font-medium">Software Development Intern</p>
+                        </div>
+                        <div class="text-right text-sm text-slate-500">
+                            <p class="font-bold">May 2023 — July 2023</p>
+                            <p>India</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-slate-600 dark:text-slate-400">
+                        <li class="flex gap-3"><span class="material-icons-round text-xs mt-1">circle</span> 0.89 F1
+                            retrieval accuracy achieved for operational decision-making through the design of a
+                            production-grade RAG infrastructure and an optimized FAISS vector indexing pipeline.</li>
+                        <li class="flex gap-3"><span class="material-icons-round text-xs mt-1">circle</span>
+                            High-throughput support system engineered to replace manual policy lookups with an automated
+                            LLM-based query resolution engine, accelerating operational workflows at scale.</li>
+                    </ul>
+                </div>
+                <div
+                    class="relative pl-10 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-px before:bg-slate-200 dark:before:bg-slate-800">
+                    <div
+                        class="absolute left-[-5px] top-2 w-[11px] h-[11px] rounded-full bg-slate-400 ring-4 ring-white dark:ring-background-dark">
+                    </div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold">Samsung Research Institute</h3>
+                            <p class="text-primary font-medium">Machine Learning Intern</p>
+                        </div>
+                        <div class="text-right text-sm text-slate-500">
+                            <p class="font-bold">August 2022 — February 2023</p>
+                            <p>India</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-slate-600 dark:text-slate-400">
+                        <li class="flex gap-3"><span class="material-icons-round text-xs mt-1">circle</span> 3% latency
+                            overhead and 81.25% accuracy ensured on resource-constrained hardware by implementing
+                            LoRA-based PEFT for open-domain QA on edge devices.</li>
+                        <li class="flex gap-3"><span class="material-icons-round text-xs mt-1">circle</span> 20x
+                            reduction in trainable parameters (utilizing only 5% of total weights) accomplished by
+                            architecting a modular LoRA adapter framework for BART, maintaining 95% of full fine-tuning
+                            performance.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="max-w-7xl mx-auto px-6 py-24 border-t border-slate-200 dark:border-slate-800">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+                        <span class="material-icons-round text-primary">book</span>
+                        Publication
+                    </h2>
+                    <p class="text-slate-600 dark:text-slate-400 italic">
+                        "Bitcoin price prediction with commodity prices as exogenous inputs." IJENM (2025). Manasvin, B.
+                        J.
+                    </p>
+                </div>
+                <div class="md:text-right">
+                    <h2 class="text-xl font-bold mb-6">Let's build something</h2>
+                    <p class="text-slate-500 dark:text-slate-400 mb-6">Always open for collaborations on GenAI and ML
+                        Research.</p>
+                    <div class="flex md:justify-end gap-4">
+                        <a class="p-3 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-primary hover:text-white transition-all"
+                            href="mailto:mbj@ucsd.edu">
+                            <span class="material-icons-round">mail</span>
+                        </a>
+                        <a class="p-3 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-primary hover:text-white transition-all"
+                            href="https://linkedin.com/in/manasvin-surya">
+                            <span class="material-icons-round">link</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-12 border-t border-slate-200 dark:border-slate-800 text-center text-sm text-slate-500">
+        <div class="max-w-7xl mx-auto px-6">
+            <p>© 2024 Manasvin Surya Balakrishnan Jaikannan. All rights reserved.</p>
+            <p class="mt-2 font-mono text-[10px] uppercase tracking-widest">Built with Tailwind CSS • San Diego, CA</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    
+</body>
+
+</html>
